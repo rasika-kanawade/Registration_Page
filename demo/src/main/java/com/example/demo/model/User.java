@@ -17,6 +17,14 @@ public class User {
     private String email;
     private String password;
     
+    public Long getId() {
+    	return id;
+    }
+    
+    public void setId(Long id) {
+    	this.id =id;
+    }
+    
     
 	public String getName() {
 		return name;
@@ -38,9 +46,9 @@ public class User {
 	}
 	
 	public User() {
-		super();
+	  super();
 		this.id = id;
-		this.name = name;
+	    this.name = name;
 		this.email = email;
 		this.password = password;
 	}
